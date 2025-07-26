@@ -1,0 +1,61 @@
+<!--   Image Gallery 
+ Design an Image Gallery using HTML CSS layout
+ Use JS for navigation (next/pre buttons, lightbox view)
+ Add hoover effects and smooth transition
+ Ensure Responsive for different screen size
+ Bonus Add image filters or categories
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/car2.avif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <div class="filter">
+            <div class="btn active" filter="all" >All</div>
+            <div class="btn" filter="bike" >Bike</div>
+            <div class="btn" filter="car" >Car</div>
+            <div class="btn" filter="yatch" >Yatch</div>
+            <div class="btn" filter="truck" >Truck</div>
+        </div>
+
+        <div class="image-container">
+            <img src="images/bike1.jpeg" class="image bike">
+            <img src="images/bike2.avif" class="image bike">
+            <img src="images/bike3.webp" class="image bike">
+            <img src="images/bike4.avif" class="image bike">
+           
+            <img src="images/car1.jpg" class="image car">
+            <img src="images/car2.avif" class="image car">
+            <img src="images/car3.webp" class="image car">
+            <img src="images/car4.jpeg" class="image car">
+            <img src="images/car5.webp" class="image car">
+            
+            <img src="images/yatch1.png" class="image yatch">
+            <img src="images/yatch2.jpeg" class="image yatch">
+            <img src="images/yatch3.webp" class="image yatch">
+            <img src="images/yatch4.jpeg" class="image yatch">
+
+            <img src="images/truck1.webp" class="image truck">
+            <img src="images/truck2.jpg" class="image truck">
+            <img src="images/truck3.jpeg" class="image truck">
+            <img src="images/truck4.webp" class="image truck">  
+        </div>
+
+        <div class="full-img" id="fullimgbox">
+            <button class="slide-btn" id="prevBtn">&#10094;</button> <!-- Prev ← -->
+            <img src="" id="fullimg">
+            <button class="slide-btn" id="nextBtn">&#10095;</button> <!-- Next → -->
+            <span>X</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
